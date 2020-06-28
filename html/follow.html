@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的关注</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pseudo.css">
+    <link rel="stylesheet" href="../css/follow.css">
+    <!-- favicon 图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="../js/js.js"></script>
+</head>
+<body>
+    <div class="pop"></div>
+    <div class="container">
+        <div class="nav">
+            <ul class="left">
+                <li class="first" style="padding-left: 0;">
+                    <a href="index.html">
+                        <img src="../images/logo.png" />
+                    </a>
+                </li>
+                <li><a href="#">博客</a></li>
+                <li>
+                    <a class="drop" href="#">学院</a>
+                    <div class="qrcode">
+                        <img src="../images/qrcode1.png" />
+                        <span>CSDN学院</span>
+                    </div>
+                </li>
+                <li><a href="#">下载</a></li>
+                <li><a href="#">论坛</a></li>
+                <li><a href="#">问答</a></li>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">招聘</a></li>
+                <li>
+                    <a class="drop" href="#">APP</a>
+                    <div class="qrcode">
+                        <img src="../images/qrcode2.png" />
+                        <span>CSDN APP</span>
+                    </div>
+                </li>
+                <li><a href="#">VIP会员</a></li>
+                <li class="last">
+                    <form class="left" id="bdfm" target="_blank" name="bdfm" method="get" action="http://www.baidu.com/s">
+                        <input onfocus="showHistory()" onblur="hideHistory()" class="search left" name="word" type="text" placeholder="搜百度" autocomplete="off" />
+                        <a href="#" style="transition: background-color 0.6s;"><input style="opacity: 0; position: absolute; cursor: pointer;" type="submit"></a>
+                    </form>
+                    <div id="history" class="history">
+                        <dl class="left">
+                            <dt>搜索历史<span class="trash"> 清空</span></dt>
+                            <dd>CSDN</dd>
+                            <dd>这个是历史记录</dd>
+                        </dl>
+                        <dl class="left">
+                            <dt>CSDN热搜</dt>
+                            <dd>Java</dd>
+                            <dd>Web</dd>
+                            <dd>Python</dd>
+                            <dd>HTML</dd>
+                            <dd>CSS</dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+            <div class="user">
+                <ul>
+                    <li class="" style="position: relative;">
+                        <a href="#" class="write">创作中心</a>
+                        <div class="blog">
+                            <a href="edit.html">写博客</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" style="font-size: 16px; color: rgb(135, 135, 154);"></a>
+                    </li>
+                    <li><a href="#" style="font-size: 16px; color: rgb(135, 135, 154);"></a></li>
+                    <li style="position: relative;">
+                        <a id="head" href="#">
+                            <img src="../images/head.jpg" />
+                        </a>
+                        <div class="edit">
+                            <div class="follow">
+                                <ul>
+                                    <li><a href="follow.html"><span></span>我的关注</a></li>
+                                    <li><a href="#"><span></span>我的收藏</a></li>
+                                    <li><a href="#"><span></span>个人中心</a></li>
+                                    <li><a href="#"><span></span>账号设置</a></li>
+                                </ul>
+                            </div>
+                            <div class="mine">
+                                <ul>
+                                    <li><a href="#"><span></span>我的博客</a></li>
+                                    <li><a href="#"><span></span>管理博客</a></li>
+                                    <li><a href="#"><span></span>我的学院</a></li>
+                                    <li><a href="#"><span></span>我的下载</a></li>
+                                    <li><a href="#"><span></span>我的活动</a></li>
+                                </ul>
+                            </div>
+                            <div class="order">
+                                <ul>
+                                    <li><a href="#"><span></span>我的钱包</a></li>
+                                    <li><a href="#"><span></span>我的订单</a></li>
+                                </ul>
+                            </div>
+                            <div class="help">
+                                <ul>
+                                    <li><a href="#"><span></span>帮助</a></li>
+                                    <li><a href="#"><span></span>退出</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box_view">
+            <div class="left_box left">
+                <ul>
+                    <li><a href="#">个人资料</a></li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li><a href="#">我的勋章</a></li>
+                    <li><a href="#">我关注的人</a></li>
+                    <li><a href="#">我的粉丝</a></li>
+                    <li><a href="#">我的标签</a></li>
+                    <li><a href="#">我的钱包</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">我的博客</a></li>
+                    <li><a href="#">我的学院</a></li>
+                    <li><a href="#">我的下载</a></li>
+                    <li><a href="#">我的论坛</a></li>
+                    <li><a href="#">我的问答</a></li>
+                    <li><a href="#">签到赢福利</a></li>
+                    <li><a href="#">抽奖</a></li>
+                </ul>
+            </div>
+            <div class="right_box">
+                <div class="top">
+                    <h3 class="left">我的关注</h3>
+                    <span class="right">共2人</span>
+                </div>
+                <ul class="watch_list">
+                    <li>
+                        <a href="#"><img src="../images/follow1.jpg" /></a>
+                        <a class="left" href="#">WNJXYK</a>
+                        <a class="click right" href="#" onclick="follow(this)">取消关注</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/follow2.jpg" /></a>
+                        <a class="left" href="#">扬帆向海</a>
+                        <a class="click right" href="#" onclick="follow(this)">取消关注</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+/* 引入字体图标 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?l351mz');
+    src:  url('../fonts/icomoon.eot?l351mz#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?l351mz') format('truetype'),
+      url('../fonts/icomoon.woff?l351mz') format('woff'),
+      url('../fonts/icomoon.svg?l351mz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* 顶部导航 */
+.container {
+    height: 44px;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    background-color: #fff;
+}
+.nav {
+    height: 44px;
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 44px;
+}
+.nav ul li {
+    position: relative;
+    float: left;
+    height: 44px;
+    padding: 0 8px;
+    transition: background-color 0.6s;
+}
+.nav .last {
+    position: relative;
+}
+.nav .last form a {
+    width: 32px;
+    height: 32px;
+    margin-top: 6px;
+    border-radius: 0 5px 5px 0;
+    float: left;
+    background-color: rgb(226, 226, 233);
+    font-family: 'icomoon';
+    line-height: 32px;
+    text-align: center;
+}
+.nav ul li img {
+    height: 44px;
+    width: 80px;
+}
+.nav .search {
+    height: 32px;
+    width: 344px;
+    margin: 6px 0 0 8px;
+    padding-left: 16px;
+    font-size: 14px;
+    color: #555666;
+    background-color: rgb(236, 236, 243);
+    border-radius: 5px 0 0 5px;
+    border: 0;
+}
+/* 二维码部分 */
+.qrcode {
+    visibility: hidden;
+    opacity: 0;
+    width: 122px;
+    height: 145px;
+    padding: 16px 16px 39px 16px;
+    background-color: #fff;
+    position: absolute;
+    top: 44px;
+    left: -40px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.1);
+    z-index: 1;
+    transition: opacity .4s;
+}
+.nav .qrcode img {
+    width: 90px;
+    height: 90px;
+}
+.qrcode span {
+    position: absolute;
+    top: 117px;
+    left: 28px;
+    line-height: 14px;
+    color: #333;
+}
+/* 历史搜索部分 */
+.history {
+    display: none;
+    position: absolute;
+    padding: 8px 0 12px 0;
+    top: 44px;
+    left: 15px;
+    width: 380px;
+    height: 300px;
+    background-color: #fff;
+    color: #555666;
+    z-index: 1;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+}
+.history dl {
+    width: 190px;
+    height: 300px;
+}
+.history dl dt,
+.history dl dd {
+    width: 190px;
+    height: 32px;
+    padding: 0 16px;
+    line-height: 32px;
+    font-size: 12px;
+}
+.history dl dt {
+    color: #ff6666;
+}
+.history dl dd {
+    cursor: pointer;
+}
+.history .trash {
+    float: right;
+    color: #a0a0a0;
+    font-family: 'icomoon';
+    cursor: pointer;
+}
+.history .trash:hover {
+    color: #555666;
+}
+
+/* 用户头像部分 */
+.user {
+    float: right;
+    height: 44px;
+    margin-right: -6px;
+}
+.user ul li {
+    padding: 0 8px 0 8px;
+    font-family: 'icomoon';
+}
+.user .write {
+    width: 92px;
+    height: 32px;
+    margin-top: 6px;
+    background-color: #E33E33;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 5px;
+}
+.user .write::before {
+    content: '\e907';
+    margin-right: 5px;
+    font-family: 'icomoon';
+}
+/* 跳转Blog部分 */
+.blog {
+    display: none;
+    position: absolute;
+    top: 38px;
+    width: 92px;
+    height: 54px;
+    text-align: center;
+    background:#fff;
+}
+.blog a {
+    height: 42px;
+    line-height: 42px;
+    margin-top: 6px;
+}
+.user #head img {
+    width: 28px;
+    height: 28px;
+    margin-top: 7px;
+    border-radius: 14px;
+}
+.user .edit {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: -120px;
+    top: 44px;
+    width: 164px;
+    height: 535px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.1);
+    transition: opacity .4s;
+}
+.edit > div {
+    width: 164px;
+    padding: 8px 0;
+    border-bottom: 1px solid #E8E8ED;
+}
+.edit .follow {
+    height: 161px;
+}
+.edit .mine {
+    height: 197px;
+}
+.edit .order {
+    height: 89px;
+}
+.edit .help {
+    height: 88px;
+    border: none;
+}
+.edit div li {
+    width: 164px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 32px 0 28px;
+}
+.edit a {
+    margin-left: 10px;
+    color: #555666;
+}
+.edit span {
+    color: #87879a;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+/* 版心 */
+.box {
+    margin: 0 370px;
+    padding-top: 12px;
+    width: 1180px;
+    height: 2000px;
+    margin: 0 auto;
+}

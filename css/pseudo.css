@@ -1,0 +1,65 @@
+.nav > ul li:hover {
+    background-color: #f0f0f5;
+}
+.nav .first:hover,
+.nav .last:hover {
+    background-color: #fff;
+}
+.nav .search:focus + a {
+    background-color: #E33E33;
+    color: #fff;
+}
+.nav .drop:hover + .qrcode,
+.qrcode:hover {
+    visibility: visible;
+    opacity: 1;
+}
+.edit div li:hover {
+    background-color: #f0f0f5;
+}
+#head:hover + .edit,
+.edit:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.history dd:hover {
+    background-color: #f0f1f2;
+}
+.sidenav li a:hover {
+    background-color: #E33E33;
+    color: #fff;
+}
+
+.banner_topright img:hover,
+.banner_bottomright img:hover {
+    transform:scale(1.2,1.2);
+}
+.passage:hover {
+    background-color: #fafafa;
+}
+.passage h2 a:hover {
+    color: #ca0c16;
+}
+.writer > a:hover {
+    color: #157dcf;
+}
+.like em:hover {
+    color: #349edf;
+}
+.activity li h3 a:hover {
+    color: #c92027;
+}
+.sideinfo ul li a:hover {
+    color: #ca0c16;
+}
+.company .info a:hover {
+    color: #c92027;
+}
+.write:hover + .blog,
+.blog:hover {
+    display: block;
+}
+.blog a:hover {
+    background-color: #f0f0f5;
+}

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pseudo.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- favicon 图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="../js/js.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul class="left">
+                <li class="first" style="padding-left: 0;">
+                    <a href="index.html">
+                        <img src="../images/logo.png" />
+                    </a>
+                </li>
+                <li><a href="javascript:;">博客</a></li>
+                <li>
+                    <a class="drop" href="#">学院</a>
+                    <div class="qrcode">
+                        <img src="../images/qrcode1.png" />
+                        <span>CSDN学院</span>
+                    </div>
+                </li>
+                <li><a href="javascript:;">下载</a></li>
+                <li><a href="javascript:;">论坛</a></li>
+                <li><a href="javascript:;">问答</a></li>
+                <li><a href="javascript:;">直播</a></li>
+                <li><a href="javascript:;">招聘</a></li>
+                <li>
+                    <a class="drop" href="#">APP</a>
+                    <div class="qrcode">
+                        <img src="../images/qrcode2.png" />
+                        <span>CSDN APP</span>
+                    </div>
+                </li>
+                <li><a href="javascript:;">VIP会员</a></li>
+                <li class="last">
+                    <form class="left" id="bdfm" target="_blank" name="bdfm" method="get" action="http://www.baidu.com/s">
+                        <input onfocus="showHistory()" onblur="hideHistory()" class="search left" name="word" type="text" placeholder="搜百度" autocomplete="off" />
+                        <a href="javascript:;" style="transition: background-color 0.6s;"><input style="opacity: 0; position: absolute; cursor: pointer;" type="submit"></a>
+                    </form>
+                    <div id="history" class="history">
+                        <dl class="left">
+                            <dt>搜索历史<span class="trash"> 清空</span></dt>
+                            <dd>CSDN</dd>
+                            <dd>这个是历史记录</dd>
+                        </dl>
+                        <dl class="left">
+                            <dt>CSDN热搜</dt>
+                            <dd>Java</dd>
+                            <dd>Web</dd>
+                            <dd>Python</dd>
+                            <dd>HTML</dd>
+                            <dd>CSS</dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+            <div class="user">
+                <ul>
+                    <li style="position: relative;">
+                        <a href="javascript:;" class="write">创作中心</a>
+                        <div class="blog">
+                            <a href="edit.html">写博客</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;" style="font-size: 16px; color: rgb(135, 135, 154);"></a>
+                    </li>
+                    <li><a href="javascript:;" style="font-size: 16px; color: rgb(135, 135, 154);"></a></li>
+                    <li style="position: relative;">
+                        <a id="head" href="#">
+                            <img src="../images/head.jpg" />
+                        </a>
+                        <div class="edit">
+                            <div class="follow">
+                                <ul>
+                                    <li><a href="follow.html"><span></span>我的关注</a></li>
+                                    <li><a href="javascript:;"><span></span>我的收藏</a></li>
+                                    <li><a href="javascript:;"><span></span>个人中心</a></li>
+                                    <li><a href="javascript:;"><span></span>账号设置</a></li>
+                                </ul>
+                            </div>
+                            <div class="mine">
+                                <ul>
+                                    <li><a href="javascript:;"><span></span>我的博客</a></li>
+                                    <li><a href="javascript:;"><span></span>管理博客</a></li>
+                                    <li><a href="javascript:;"><span></span>我的学院</a></li>
+                                    <li><a href="javascript:;"><span></span>我的下载</a></li>
+                                    <li><a href="javascript:;"><span></span>我的活动</a></li>
+                                </ul>
+                            </div>
+                            <div class="order">
+                                <ul>
+                                    <li><a href="javascript:;"><span></span>我的钱包</a></li>
+                                    <li><a href="javascript:;"><span></span>我的订单</a></li>
+                                </ul>
+                            </div>
+                            <div class="help">
+                                <ul>
+                                    <li><a href="javascript:;"><span></span>帮助</a></li>
+                                    <li><a href="javascript:;"><span></span>退出</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="sidenav left">
+            <ul>
+                <li><a style="color: #fff; background-color: #e33e33" href="#">推荐</a></li>
+                <li><a href="javascript:;">动态</a></li>
+                <li><a href="javascript:;">程序人生</a></li>
+                <li><a href="javascript:;">Python</a></li>
+                <li><a href="javascript:;">Java</a></li>
+                <li><a href="javascript:;">百万人学AI</a></li>
+                <li><a href="javascript:;">前端</a></li>
+                <li><a href="javascript:;">架构</a></li>
+                <li><a href="javascript:;">区块链</a></li>
+                <li><a href="javascript:;">数据库</a></li>
+                <li><a href="javascript:;">5G</a></li>
+                <li><a href="javascript:;">游戏开发</a></li>
+                <li><a href="javascript:;">移动开发</a></li>
+                <li><a href="javascript:;">运维</a></li>
+                <li><a href="javascript:;">安全</a></li>
+                <li><a href="javascript:;">云计算/大数据</a></li>
+                <li><a href="javascript:;">研发管理</a></li>
+                <li><a href="">物联网</a></li>
+                <li><a href="javascript:;">计算机基础</a></li>
+                <li><a href="javascript:;">音视频开发</a></li>
+                <li><a href="javascript:;">其他</a></li>
+            </ul>
+        </div>
+        <div class="main left">
+            <div class="banner">
+                <div class="banner_left">
+                    <a href="javascript:;" id="bannerImg">
+                        <img class="bannerImg2" src="../images/img1.png" />
+                        <img class="bannerImg3" src="../images/img2.png" />
+                        <img class="bannerImg4" src="../images/img3.png" />
+                        <img class="bannerImg1" src="../images/img4.png" />
+                    </a>
+                    <ul id="list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="banner_topright">
+                    <a href="javascript:;"><img src="../images/img5.png" /></a>
+                </div>
+                <div class="banner_bottomright">
+                    <a href="javascript:;"><img src="../images/img6.png" /></a>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del1" onmousedown="del('del1')" class="del"></span><a href="javascript:;">2020年4月中国编程语言排行榜</a></h2>
+                        <p>编程语言比例排名编程语言平均工资工资中位数最低工资最高工资人头人头百分比</p>
+                        <div class="writer">
+                            <img src="../images/head1.jpg" />
+                            <a href="javascript:;">有数可据</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon1" onmousedown="isGood('good1', 0, 'goodIcon1')"></em><span id="good1">14</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">17295</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del2" onmousedown="del('del2')" class="del"></span><a href="javascript:;">什么是a站、b站、c站、d站、e站、f站、g站、h站、i站、j站、k站、l站、m站、n站？00后的世界我不懂！</a></h2>
+                        <p>A站
+                            AcFun弹幕视频网，简称“A站”，成立于2007年6月，取意于Anime Comic Fun，是中国大陆第一家弹幕视频网站。A站以视频为载体</p>
+                        <div class="writer">
+                            <img src="../images/head3.jpg" />
+                            <a href="javascript:;">长沙逍遥子</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon2" onmousedown="isGood('good2', 1, 'goodIcon2')"></em><span id="good2">13</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">3537</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del3" onmousedown="del('del3')" class="del"></span><a href="javascript:;">论程序员如何正确上班摸鱼</a></h2>
+                        <p>程序员如何正确上班摸鱼是怎么回事呢？程序员如何正确上班相信大家都很熟悉，但是程序员如何正确上班摸鱼是怎么回事呢</p>
+                        <div class="writer">
+                            <img src="../images/head2.jpg" />
+                            <a href="javascript:;">闵渭凯</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon3" onmousedown="isGood('good3', 2, 'goodIcon3')"></em><span id="good3">103</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">31862</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del4" onmousedown="del('del4')" class="del"></span><a href="javascript:;">面试一个月，要自闭了...</a></h2>
+                        <p>大学四年白读了</p>
+                        <div class="writer">
+                            <img src="../images/head4.jpg" />
+                            <a href="javascript:;">敖 丙</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon4" onmousedown="isGood('good4', 4, 'goodIcon4')"></em><span id="good4">62</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">13189</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del5" onmousedown="del('del5')" class="del"></span><a href="javascript:;">白嫖steam游戏，我是专业的</a></h2>
+                        <p>做自己喜欢的爬虫：steam白嫖闲的无聊做了一期steam白嫖的文章。有了它，以后就再也不会担心游戏没有白嫖到了。</p>
+                        <div class="writer">
+                            <img src="../images/head5.jpg" />
+                            <a href="javascript:;">꧁༺北海以北的等待༻꧂</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon5" onmousedown="isGood('good5', 5, 'goodIcon5')"></em><span id="good5">74</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">26816</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del6" onmousedown="del('del6')" class="del"></span><a href="javascript:;">年薪30万的朋友和我说，他准备换个月薪8千的工作，原因很简单</a></h2>
+                        <p>这几年，我周围朋友频繁地提起一个词，叫“抗风险能力”。他们一个个感慨，人到中年最关键的能力不是挣多少钱、懂多少知识、拥有多少人脉，而是能保证不崩盘。</p>
+                        <div class="writer">
+                            <img src="../images/head6.jpg" />
+                            <a href="javascript:;">C语言编程俱乐部</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon6" onmousedown="isGood('good6', 6, 'goodIcon6')"></em><span id="good6">2</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">786</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del7" onmousedown="del('del7')" class="del"></span><a href="javascript:;">牛逼！这位程序员开发出一“舔狗”必备神器（代码已开源）！</a></h2>
+                        <p>在一个阳光明媚的清晨，我打开窗户呼吸了一口新鲜空气。阳光灿烂，岁月静好，又是一个约女朋友出去爬山吃饭看电影的好日子。想到女朋友的大眼睛，我脸上不禁洋溢起了幸福的微笑。</p>
+                        <div class="writer">
+                            <img src="../images/head7.jpg" />
+                            <a href="javascript:;">Java技术剑</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon7" onmousedown="isGood('good7', 7, 'goodIcon7')"></em><span id="good7">5</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">1067</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del8" onmousedown="del('del8')" class="del"></span><a href="javascript:;">罗志祥——时间管理</a></h2>
+                        <p>时间管理——（我愿称之为罗氏时间管理大法，全体起立！）</p>
+                        <div class="writer">
+                            <img src="../images/head8.jpg" />
+                            <a href="javascript:;">Zain Lau</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon8" onmousedown="isGood('good8', 8, 'goodIcon8')"></em><span id="good8">1</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">385</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del9" onmousedown="del('del9')" class="del"></span><a href="javascript:;">前端优化js篇</a></h2>
+                        <p>前言
+                            分享即学习，欢迎转载，随意抄袭，学到了就是你的。文章共分成两个部分，分别为js部分与html+css部分。本文针对js优化部分，后续会跟进html+css部分。</p>
+                        <div class="writer">
+                            <img src="../images/head9.gif" />
+                            <a href="javascript:;">野生馒头</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon9" onmousedown="isGood('good9', 9, 'goodIcon9')"></em><span id="good9">1</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">912</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del10" onmousedown="del('del10')" class="del"></span><a href="javascript:;">HTML+CSS基础训练之实现一个“真实”的网页～</a></h2>
+                        <p>@一个“真”的网页实现一个真的网页～经过了前几次的实验，相信大家已经对网页布局有了初步的了解，那么这一次就让我们来做个“真网页”吧！</p>
+                        <div class="writer">
+                            <img src="../images/head10.jpg" />
+                            <a href="javascript:;">WW</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon10" onmousedown="isGood('good10', 10, 'goodIcon10')"></em><span id="good10">8</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">2517</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del11" onmousedown="del('del11')" class="del"></span><a href="javascript:;">有时候会打印出-858993460，这个数字是什么意思？</a></h2>
+                        <p>-858993460 这个数字是什么意思？在运行C++程序的时候，有时候会打印出这样的值：-858993460</p>
+                        <div class="writer">
+                            <img src="../images/head11.jpg" />
+                            <a href="javascript:;">米之炼金术师</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon11" onmousedown="isGood('good11', 11, 'goodIcon11')"></em><span id="good11">1</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">37</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del12" onmousedown="del('del12')" class="del"></span><a href="javascript:;">说下 前端开发和后端开发的区别？这两者哪个更累？</a></h2>
+                        <p>-前端开发和后端开发的区别有哪些？前端开发和后端开发哪个做起来更累？对于刚接触开发的朋友可能会有这样的疑问，下面就一起来了解下吧！</p>
+                        <div class="writer">
+                            <img src="../images/head12.jpg" />
+                            <a href="javascript:;">会飞的小蚂蚱</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon12" onmousedown="isGood('good12', 12, 'goodIcon12')"></em><span id="good12">16</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">3972</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del2" onmousedown="del('del2')" class="del"></span><a href="javascript:;">什么是a站、b站、c站、d站、e站、f站、g站、h站、i站、j站、k站、l站、m站、n站？00后的世界我不懂！</a></h2>
+                        <p>A站
+                            AcFun弹幕视频网，简称“A站”，成立于2007年6月，取意于Anime Comic Fun，是中国大陆第一家弹幕视频网站。A站以视频为载体</p>
+                        <div class="writer">
+                            <img src="../images/head3.jpg" />
+                            <a href="javascript:;">长沙逍遥子</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon2" onmousedown="isGood('good2', 1, 'goodIcon2')"></em><span id="good2">13</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">3537</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del6" onmousedown="del('del6')" class="del"></span><a href="javascript:;">年薪30万的朋友和我说，他准备换个月薪8千的工作，原因很简单</a></h2>
+                        <p>这几年，我周围朋友频繁地提起一个词，叫“抗风险能力”。他们一个个感慨，人到中年最关键的能力不是挣多少钱、懂多少知识、拥有多少人脉，而是能保证不崩盘。</p>
+                        <div class="writer">
+                            <img src="../images/head6.jpg" />
+                            <a href="javascript:;">C语言编程俱乐部</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon6" onmousedown="isGood('good6', 6, 'goodIcon6')"></em><span id="good6">2</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">786</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="passage">
+                        <h2><span id="del7" onmousedown="del('del7')" class="del"></span><a href="javascript:;">牛逼！这位程序员开发出一“舔狗”必备神器（代码已开源）！</a></h2>
+                        <p>在一个阳光明媚的清晨，我打开窗户呼吸了一口新鲜空气。阳光灿烂，岁月静好，又是一个约女朋友出去爬山吃饭看电影的好日子。想到女朋友的大眼睛，我脸上不禁洋溢起了幸福的微笑。</p>
+                        <div class="writer">
+                            <img src="../images/head7.jpg" />
+                            <a href="javascript:;">Java技术剑</a>
+                            <div class="like">
+                                <a href="javascript:;"><em id="goodIcon7" onmousedown="isGood('good7', 7, 'goodIcon7')"></em><span id="good7">5</span></a>
+                                <a href="javascript:;"><em id="lookedIcon"></em><span id="looked">1067</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sideinfo left">
+            <div>
+                <img src="../images/act.png" width="298" height="110" style="margin-left: -15px; margin-top: -16px;" />
+            </div>
+            <div class="vote">
+                <dl>
+                    <dt>远程办公</dt>
+                    <dd style="font-weight: bold; font-size: 20px;">68%</dd>
+                </dl>
+                <a href="javascript:;">投票参与</a>
+                <dl>
+                    <dt>公司办公</dt>
+                    <dd style="font-weight: bold; font-size: 20px;">32%</dd>
+                </dl>
+            </div>
+            <ul>
+                <li style="border-bottom: 1px dashed #c4cece;">
+                    <a href="javascript:;">达摩院 2020 十大科技趋势发布，大变局到来！</a>
+                </li>
+                <li>
+                    <a href="javascript:;">如何看待AI换脸技术？</a>
+                </li>
+            </ul>
+        </div>
+        <div class="activity left">
+            <h3><span class="line left"></span><span class="text left">活动日历</span></h3>
+            <ul>
+                <li>
+                    <div class="date left">
+                        <strong>17</strong>
+                        <p class="month">04月</p>
+                    </div>
+                    <h3><a href="javascript:;">XXX 产品发布会</a></h3>
+                    <p class="status">线上</p>
+                </li>
+                <li>
+                    <div class="date left">
+                        <strong>17</strong>
+                        <p class="month">04月</p>
+                    </div>
+                    <h3><a href="javascript:;">XXX 产品发布会</a></h3>
+                    <p class="status">线上</p>
+                </li>
+                <li>
+                    <div class="date left">
+                        <strong>17</strong>
+                        <p class="month">04月</p>
+                    </div>
+                    <h3><a href="javascript:;">XXX 产品发布会</a></h3>
+                    <p class="status">线上</p>
+                </li>
+                <li>
+                    <div class="date left">
+                        <strong>17</strong>
+                        <p class="month">04月</p>
+                    </div>
+                    <h3><a href="javascript:;">XXX 产品发布会</a></h3>
+                    <p class="status">线上</p>
+                </li>
+                <li style="border: none; margin-bottom: 0;">
+                    <div class="date left">
+                        <strong>17</strong>
+                        <p class="month">04月</p>
+                    </div>
+                    <h3><a href="javascript:;">XXX 产品发布会</a></h3>
+                    <p class="status">线上</p>
+                </li>
+            </ul>
+        </div>
+        <div class="company" style="float: right;">
+            <h3><span class="line left"></span><span class="text left">企业博客</span></h3>
+            <ul>
+                <li>
+                    <div class="logo left">
+                        <a href="javascript:;"><img src="../images/huawei.jpg" /></a>
+                    </div>
+                    <div class="info left">
+                        <h3><a href="javascript:;">华为云官方博客</a></h3>
+                        <p>原创 1234  粉丝 1234  获赞 1234</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo left">
+                        <a href="javascript:;"><img src="../images/alibaba.jpg" /></a>
+                    </div>
+                    <div class="info left">
+                        <h3><a href="javascript:;">阿里技术</a></h3>
+                        <p>原创 1234  粉丝 1234  获赞 1234</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo left">
+                        <a href="javascript:;"><img src="../images/meituan.jpg" /></a>
+                    </div>
+                    <div class="info left">
+                        <h3><a href="javascript:;">美团技术团队</a></h3>
+                        <p>原创 1234  粉丝 1234  获赞 1234</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo left">
+                        <a href="javascript:;"><img src="../images/company1.jpg" /></a>
+                    </div>
+                    <div class="info left">
+                        <h3><a href="javascript:;">巨杉数据库技术社区</a></h3>
+                        <p>原创 1234  粉丝 1234  获赞 1234</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo left">
+                        <a href="javascript:;"><img src="../images/company2.jpg" /></a>
+                    </div>
+                    <div class="info left">
+                        <h3><a href="javascript:;">千锋教育</a></h3>
+                        <p>原创 1234  粉丝 1234  获赞 1234</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo left">
+                        <a href="javascript:;"><img src="../images/company3.jpg" /></a>
+                    </div>
+                    <div class="info left">
+                        <h3><a href="javascript:;">百度大脑</a></h3>
+                        <p>原创 1234  粉丝 1234  获赞 1234</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
