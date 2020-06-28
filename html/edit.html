@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>写文章</title>
+    <link rel="stylesheet" href="../css/edit.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/editormd.css">
+    <!-- favicon 图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="../js/js.js"></script>
+</head>
+<body>
+    <div class="head">
+        <a href="index.html"><h4 class="left">返回主页</h4></a>
+        <div class="title left">
+            <input type="text" maxlength="100" placeholder="输入文章标题" />
+        </div>
+        <div class="option right">
+            <button class="save">保存草稿</button>
+            <button class="publish">发布文章</button>
+            <a href="#" style="display: inline-block;"><img src="../images/head.jpg" /></a>
+        </div>
+    </div>
+    <div class="editor left">
+        <textarea id="text" oninput="this.editor.update()" cols="30" rows="60"># 标题</textarea>
+    </div>
+    <div id="preview" class="preview left"></div>
+    <script src="../js/markdown.js"></script>
+    <script>
+          var $ = function (id) { return document.getElementById(id); };
+        new Editor($("text"), $("preview"));
+    </script>
+</body>
+</html>
